@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="user"
+            type="com.johnson.pablo.databinding.data.User" />
+
+        <import type="com.johnson.pablo.databinding.utilities.Util" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/firstNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/nombre_label"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/firstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/firstNameLabel"
+            android:text="@{user.firstName}"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/secondNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstNameLabel"
+            android:layout_marginLeft="10dp"
+            android:text="@string/secondNameLabel"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/secondName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstName"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/secondNameLabel"
+            android:text="@{user.lastName}"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/countryLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/secondNameLabel"
+            android:layout_marginLeft="10dp"
+            android:text="@string/countryLabel"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/secondName"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/countryLabel"
+            android:text="@{Util.capitalize(user.country)}"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+</layout>

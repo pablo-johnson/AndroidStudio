@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">DataBinding</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="nombre_label">Nombre:</string>
+    <string name="secondNameLabel">Apellido:</string>
+    <string name="countryLabel">País:</string>
 </resources>
