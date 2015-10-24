@@ -12,4 +12,12 @@
     tools:context="com.johnson.pablo.buildvariant.activities.MainActivity"
     tools:showIn="@layout/activity_main">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="36sp"
+        android:gravity="center"
+        android:text="@string/landingMessage"/>
+
 </RelativeLayout>
