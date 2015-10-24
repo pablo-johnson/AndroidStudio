@@ -5,7 +5,6 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 
 import com.johnson.pablo.databinding.R;
-import com.johnson.pablo.databinding.data.Handlers;
 import com.johnson.pablo.databinding.data.User;
 import com.johnson.pablo.databinding.databinding.MainActivityBinding;
 
