@@ -4,4 +4,6 @@
     <string name="nombre_label">Nombre:</string>
     <string name="secondNameLabel">Apellido:</string>
     <string name="countryLabel">País:</string>
+    <string name="withDataBindingLabel">Con Data Binding</string>
+    <string name="withoutDataBinding">Sin Data Binding</string>
 </resources>
